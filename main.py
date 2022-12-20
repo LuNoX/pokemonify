@@ -1,4 +1,6 @@
+#Following https://stackabuse.com/image-recognition-in-python-with-tensorflow-and-keras/
 import numpy as np
+import ssl
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -9,7 +11,7 @@ from keras.constraints import maxnorm
 from keras.utils import np_utils
 from keras.datasets import cifar10
 
-import ssl
+
 ssl._create_default_https_context = ssl._create_unverified_context
 
 print(f"Is TF built with cuda?: {tf.test.is_built_with_cuda()}")
