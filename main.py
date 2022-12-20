@@ -1,4 +1,8 @@
 import numpy as np
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
 import tensorflow as tf
 from tensorflow import keras
 from keras.constraints import maxnorm
@@ -56,3 +60,6 @@ history = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=2
 
 scores = model.evaluate(x_test, y_test, verbose=0)
 print("Accuracy: %.2f%%" % (scores[1]*100))
+
+pd.DataFrame(history.history).plot()
+plt.show()
