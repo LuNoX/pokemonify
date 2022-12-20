@@ -17,3 +17,4 @@ Things that need to be done:
 - [ ] implement a NN that can give any image a pokemon name
 - [ ] implement some sort of downsampling for input images so images of any size are acceptable rather than just sprites
 - [ ] maybe at some point do evolutions somehow?
+- [ ] shiny predictions would be cool after that as well
